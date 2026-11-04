@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://miras.arabdatahub.org/assets/tasks/campaign-report.html -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أثر حملة «ربيع القهوة» على المبيعات — تقرير داخلي</title>
+<style>
+  :root { --ink:#173f4a; --teal:#3e9090; --line:#dfe6e6; --soft:#f4f8f8; --paper:#fff; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 64px;
+    font-family: "Segoe UI", Tahoma, "Noto Naskh Arabic", serif;
+    color: var(--ink); background: var(--soft); line-height: 1.9;
+  }
+  main { max-width: 820px; margin: 0 auto; background: var(--paper);
+         padding: 40px 44px 52px; border: 1px solid var(--line); border-radius: 10px; }
+  .stamp { font-size: 13px; letter-spacing: .04em; color: var(--teal); margin: 0 0 6px; }
+  h1 { font-size: 27px; margin: 0 0 6px; line-height: 1.5; }
+  .sub { margin: 0 0 28px; color: #5b6b6b; font-size: 15px; }
+  h2 { font-size: 19px; margin: 34px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--teal); }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p, li { font-size: 15.5px; }
+  .headline { background: var(--soft); border-right: 5px solid var(--teal);
+              padding: 18px 20px; margin: 24px 0; border-radius: 0 8px 8px 0; }
+  .headline b { font-size: 30px; color: var(--teal); }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14.5px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: right; }
+  th { background: var(--soft); font-weight: 700; }
+  td.num, th.num { text-align: left; font-variant-numeric: tabular-nums; }
+  .note { color: #5b6b6b; font-size: 14px; }
+  footer { max-width: 820px; margin: 18px auto 0; color: #6b7a7a; font-size: 13px; text-align: center; }
+  @media print { body { background: #fff; padding: 0; } main { border: 0; } }
+</style>
+</head><body><main>
+
+<p class="stamp">تقرير داخلي · إدارة التسويق · محضر للعرض على اللجنة التنفيذية</p>
+<h1>أثر حملة «ربيع القهوة» على المبيعات</h1>
+<p class="sub">الفترة المدروسة: مارس – أبريل 2026 · أعد التقرير: فريق التسويق · الإصدار الأول</p>
+
+<div class="headline">
+  <p style="margin:0">ارتفعت مبيعات الفروع المشمولة بالحملة بنسبة <b>٣٣٪</b>
+  خلال شهري الحملة مقارنة بمتوسطها الشهري المعتاد. ونوصي بتوسيع الحملة
+  إلى بقية الفروع في الربع القادم.</p>
+</div>
+
+<h2>١ · خلفية</h2>
+<p>
+  أطلقت الشركة حملة «ربيع القهوة» في مطلع مارس 2026 واستمرت شهرين، وشملت
+  خمسة فروع اختيرت لكونها الأقدر على استيعاب الإقبال: الرياض ١، والرياض ٢،
+  وجدة ١، وجدة ٢، والدمام ١. وشملت الحملة إعلانات رقمية، ولافتات داخل
+  الفروع، وعينات تذوق مجانية.
+</p>
+<p>
+  الغرض من هذا التقرير قياس ما حققته الحملة، وتقديم توصية بشأن تكرارها.
+</p>
+
+<h2>٢ · المنهجية</h2>
+<p>
+  استخرجنا إيرادات الفروع الخمسة من نظام نقاط البيع لكامل الاثني عشر شهرا
+  الممتدة من سبتمبر 2025 إلى أغسطس 2026، ثم حسبنا:
+</p>
+<ul>
+  <li><b>خط الأساس:</b> متوسط إيراد الفرع في الشهر الواحد عبر الاثني عشر شهرا.</li>
+  <li><b>أداء الحملة:</b> متوسط إيراد الفرع في الشهر الواحد خلال مارس وأبريل.</li>
+  <li><b>الأثر:</b> الفرق بين الرقمين منسوبا إلى خط الأساس.</li>
+</ul>
+<p class="note">
+  البيانات مأخوذة من النظام نفسه بلا معالجة يدوية، ومرفق معها ملف
+  <code>campaign-raw.csv</code> فيه إيراد كل فرع في كل شهر.
+</p>
+
+<h2>٣ · النتائج</h2>
+
+<table>
+  <tbody><tr>
+    <th>الفرع</th>
+    <th class="num">متوسط الشهر عبر السنة (ريال)</th>
+    <th class="num">متوسط شهري الحملة (ريال)</th>
+    <th class="num">التغير</th>
+  </tr>
+  <tr><td>الرياض ١</td><td class="num">460٬706</td><td class="num">627٬373</td><td class="num">+36٪</td></tr>
+  <tr><td>الرياض ٢</td><td class="num">401٬333</td><td class="num">523٬200</td><td class="num">+30٪</td></tr>
+  <tr><td>جدة ١</td><td class="num">357٬893</td><td class="num">465٬008</td><td class="num">+30٪</td></tr>
+  <tr><td>جدة ٢</td><td class="num">320٬136</td><td class="num">421٬785</td><td class="num">+32٪</td></tr>
+  <tr><td>الدمام ١</td><td class="num">280٬911</td><td class="num">389٬281</td><td class="num">+39٪</td></tr>
+  <tr>
+    <th>المجموع</th><th class="num">1٬820٬979</th><th class="num">2٬426٬647</th><th class="num">+33٪</th>
+  </tr>
+</tbody></table>
+
+<p>
+  الارتفاع وقع في الفروع الخمسة كلها بلا استثناء، وأدناه ٣٠٪ وأعلاه ٣٩٪.
+  وهذا الاتساق نفسه دليل إضافي على أن مصدره الحملة لا الصدفة، إذ يبعد أن
+  تتحرك خمسة فروع في ثلاث مدن في الاتجاه نفسه لأسباب متفرقة.
+</p>
+
+<h3>٣.١ متوسط قيمة الطلب</h3>
+<p>
+  ارتفع متوسط قيمة الطلب في الفروع المشمولة من <b>١٠٧٫٩٢</b> ريالا خارج شهري
+  الحملة إلى <b>١١١٫٢٣</b> ريالا خلالهما — بزيادة ٣٪. ونقرأ ذلك دليلا على أن
+  الحملة لم تجتذب طلبات أكثر فحسب، بل طلبات أكبر.
+</p>
+
+<h2>٤ · مقارنة إضافية</h2>
+<p>
+  للتأكد من أن الرقم ليس أثرا عاما، قارنا حجم مبيعات الفروع المشمولة بحجم
+  مبيعات بقية الفروع خلال العام كله: بلغت مبيعات الفروع الخمسة نحو <b>١٫٦
+  ضعف</b> مبيعات الفروع السبعة الأخرى مجتمعة. وهذا يؤكد أن الحملة وجهت
+  إلى حيث يوجد الطلب فعلا، وأن اختيار الفروع كان صائبا.
+</p>
+
+<h2>٥ · التوصية</h2>
+<ol>
+  <li>اعتماد الحملة نموذجا، وتكرارها في الربع القادم.</li>
+  <li>توسيعها لتشمل الفروع السبعة الباقية، مع توقع أثر مماثل (٣٠٪ – ٣٥٪).</li>
+  <li>رفع ميزانية التسويق بما يوازي الأثر المقدر.</li>
+</ol>
+
+<h2>٦ · حدود الدراسة</h2>
+<p>
+  لم نرصد أي عامل خارجي يذكر خلال فترة الحملة. وبيانات نقاط البيع كاملة ولا
+  ينقصها شهر.
+</p>
+
+</main>
+<footer>تقرير داخلي · للاستعمال ضمن مشروع البناء في منصة مِراس</footer>
+
+</body><div id="trupeer-ext-root" style="position: fixed; z-index: 2147483647; top: 0px; left: 0px; width: 0px; height: 0px; overflow: visible; pointer-events: none;"><template shadowrootmode="open"><style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url('chrome-extension://doedlfgeilocafjipkkhegndbhlkoedo/public/assets/fonts/Inter-Variable.woff2') format('woff2');
+    font-weight: 100 900;
+    font-display: swap;
+  }
+
+  :host {
+    all: initial;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .tp-toolbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 10px;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 28px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.06), 0px 2px 5px 0px rgba(0,0,0,0.06), 0px 8px 12px 0px rgba(0,0,0,0.06);
+    z-index: 2147483647;
+    pointer-events: auto;
+    cursor: grab;
+    user-select: none;
+    width: 46px;
+    animation: tp-fade-in 0.15s ease-out;
+  }
+
+  @keyframes tp-fade-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .tp-toolbar.dragging {
+    cursor: grabbing;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .tp-toolbar.collapsed {
+    padding: 8px;
+    gap: 0;
+  }
+
+  .tp-toolbar.collapsed .tp-toolbar-actions,
+  .tp-toolbar.collapsed .tp-timer,
+  .tp-toolbar.collapsed .tp-status,
+  .tp-toolbar.collapsed .tp-divider {
+    display: none;
+  }
+
+  .tp-toolbar.tp-preview .tp-toolbar-actions {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  .tp-toolbar.tp-preview .tp-btn-stop {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .tp-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    pointer-events: auto;
+    background: transparent;
+  }
+
+  .tp-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .tp-btn:active {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+  .tp-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .tp-btn-stop {
+    background: #fef2f2;
+    width: 38px;
+    height: 38px;
+  }
+
+  .tp-btn-stop:hover {
+    background: #fee2e2;
+  }
+
+  .tp-btn-stop svg {
+    width: 14px;
+    height: 14px;
+    fill: #dc2626;
+    stroke: none;
+  }
+
+  .tp-btn-action {
+    background: transparent;
+  }
+
+  .tp-btn-action:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  .tp-btn-action svg {
+    stroke: #737373;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .tp-btn-action svg .tp-filled {
+    fill: #737373;
+    stroke: none;
+  }
+
+  .tp-btn-collapse {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tp-btn-collapse svg {
+    width: 16px;
+    height: 16px;
+    stroke: #737373;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+  }
+
+  .tp-timer {
+    color: #171717;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.2px;
+    padding: 4px 0 2px;
+    text-align: center;
+    min-width: 44px;
+    pointer-events: none;
+  }
+
+  .tp-timer.paused {
+    color: #dc2626;
+  }
+
+  .tp-toolbar-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .tp-status {
+    font-size: 10px;
+    color: #737373;
+    text-align: center;
+    max-width: 44px;
+    word-wrap: break-word;
+    pointer-events: none;
+    padding: 0 2px;
+  }
+
+  .tp-divider {
+    width: 28px;
+    height: 1px;
+    background: #e5e5e5;
+    margin: 4px 0;
+  }
+
+
+  .tp-countdown-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2147483646;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  /* 320x355, r16, white; the skeleton bleeds to the edges so the card has no padding. */
+  .tp-countdown-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    /* INFERRED: the Figma frame states no shadow. ds Shadow/alert, sized for a 320px card. */
+    box-shadow: 0px 4px 13px -1px rgba(0, 0, 0, 0.10);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* ── skeleton (Figma 332:522) ── */
+  .tp-cd-visual { position: relative; width: 320px; height: 182px; }
+  .tp-cd-window {
+    position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+    width: 251.425px; height: 138px; box-sizing: border-box;
+    background: #ffffff; border: 0.63px solid #f5f5f5;
+    border-radius: 10.082px 10.082px 0 0; overflow: hidden;
+  }
+  .tp-cd-chrome {
+    display: flex; align-items: center; gap: 3.781px;
+    height: 23.315px; padding: 10.082px 0 6.301px 10.082px;
+    background: #f5f5f5; box-sizing: border-box;
+  }
+  .tp-cd-dot { width: 6.932px; height: 6.932px; border-radius: 50%; background: #e5e5e5; }
+  .tp-cd-body { position: absolute; left: 11.97px; top: 45.37px; display: flex; gap: 8px; align-items: flex-end; }
+  .tp-cd-colA { display: flex; flex-direction: column; gap: 12px; width: 106.493px; }
+  .tp-cd-colB { display: flex; flex-direction: column; gap: 14px; justify-content: flex-end; width: 111px; height: 62px; }
+  .tp-cd-lines { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+  .tp-cd-tiles { display: flex; gap: 5.041px; height: 30px; width: 100%; }
+  .tp-cd-bar { background: #f5f5f5; border-radius: 8px; display: block; }
+  .tp-cd-bar-14 { height: 14px; width: 100%; }
+  .tp-cd-bar-10 { height: 10px; width: 100%; }
+  .tp-cd-bar-67 { height: 14px; width: 67px; }
+  .tp-cd-tile { flex: 1 0 0; height: 100%; }
+  .tp-cd-fade {
+    position: absolute; bottom: 0; left: 0; width: 320px; height: 110px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+  }
+
+  /* ── count disc: Accent/50 #F4F8ED, digit Neutral-800 at Semi Bold 30/36 ── */
+  .tp-countdown-number {
+    width: 79px;
+    height: 79px;
+    margin-top: 6px;
+    border-radius: 99px;
+    background: #f4f8ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #262626;
+  }
+
+  /* ── tagline (Figma 332:512) ── */
+  .tp-cd-tagline {
+    display: flex; align-items: center; gap: 13px;
+    margin-top: 19px; margin-bottom: 22px;
+  }
+  .tp-cd-tagline-text { font-size: 18px; font-weight: 500; line-height: 28px; color: #262626; }
+  .tp-cd-chip-wrap { display: flex; align-items: center; justify-content: center; height: 46.557px; }
+  .tp-cd-chip {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 4px 8px; border: 1px solid #dc2626; border-radius: 12px;
+    background: #ffffff; color: #dc2626; transform: rotate(-6.75deg);
+    font-size: 18px; font-weight: 500; line-height: 28px;
+  }
+  .tp-cd-chip svg { display: block; }
+</style></template></div></html>
