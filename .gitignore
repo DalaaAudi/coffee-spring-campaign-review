@@ -1,0 +1,7 @@
+cat << 'EOF' > .gitignore
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+~$*
+EOF
